@@ -329,7 +329,7 @@ static void
     RelocationAddressCache_set_at(cache, symEntry, symAddr);
 }
 
-#define MAX_SYMBOL_NAME_LEN 128u
+#define MAX_SYMBOL_NAME_LEN 512u
 
 static bool relocate(FlipperApplication* e, Elf32_Shdr* h, ELFSection_t* s) {
     if(s->data) {
